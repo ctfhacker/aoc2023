@@ -10,6 +10,7 @@ timeloop::impl_enum!(
     pub enum Timer {
         Part1,
         Part2,
+        Part2Opt1,
     }
 );
 
@@ -109,7 +110,7 @@ fn part2(data: &str) -> Option<u32> {
 }
 
 fn part2_opt1(data: &str) -> Option<u32> {
-    timeloop::scoped_timer!(Timer::Part2);
+    timeloop::scoped_timer!(Timer::Part2Opt1);
 
     let mut sum = 0_u32;
 
